@@ -1,5 +1,5 @@
-import java.time.Duration;
-import java.time.Instant;
+//import java.time.Duration;
+//import java.time.Instant;
 public class Algorithm {
 
      public static void main(String[] args) {
@@ -7,13 +7,13 @@ public class Algorithm {
         System.out.println(fib2(10));
     
         long start1 =  System.currentTimeMillis();
-        Algorithm.fib2(20);
-        //Algorithm.fib(20);
+        //Algorithm.fib2(40);
+        Algorithm.fib(40);
         long end1 = System.currentTimeMillis();      
         System.out.println("Elapsed Time in milli seconds: "+ (end1-start1));
     }
 
-    public static long fib(long n) {
+    private static long fib(long n) {
         if (n == 0 || n == 1)
             return 1;
         else
